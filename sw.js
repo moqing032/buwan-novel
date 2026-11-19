@@ -1,4 +1,4 @@
-const CACHE = 'buwan-v1';
+const CACHE = 'buwan-v3';
 const SHELL = ['./', './index.html', './app.js', './icon.svg', './icon-192.png', './icon-512.png', './manifest.webmanifest'];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
